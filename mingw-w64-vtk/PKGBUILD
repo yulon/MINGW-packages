@@ -5,7 +5,7 @@ _realname=vtk
 pkgbase="mingw-w64-${_realname}"
 pkgname="${MINGW_PACKAGE_PREFIX}-${_realname}"
 pkgver=8.1.1
-pkgrel=1
+pkgrel=2
 pkgdesc="A software system for 3D computer graphics, image processing and visualization (mingw-w64)"
 arch=('any')
 url="https://www.vtk.org/"
@@ -39,7 +39,6 @@ optdepends=("${MINGW_PACKAGE_PREFIX}-boost: InfovisBoost and InfovisBoostGraphAl
             "${MINGW_PACKAGE_PREFIX}-libmariadbclient: interface to MariaDB"
             "${MINGW_PACKAGE_PREFIX}-postgresql: interface to PostgreSQL"
             "${MINGW_PACKAGE_PREFIX}-python2: Python bindings"
-            "${MINGW_PACKAGE_PREFIX}-python2-matplotlib: Matplotlib renderer"
             "${MINGW_PACKAGE_PREFIX}-tk: TCL bindings, Python Tk widgets")
 source=(https://www.vtk.org/files/release/${pkgver%.*}/VTK-${pkgver}.tar.gz
         "001-vtk-mingw-w64.patch"
